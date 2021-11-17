@@ -1,0 +1,18 @@
+ring_groups:
+- c4a sdrs
+- c4a prospective agents
+- c4a client service
+- c4a active agents
+- marlon simpson
+
+chained_ring_groups:
+  c4a sdrs_then_c4a prospective agents:
+    - c4a sdrs
+    - c4a prospective agents
+  c4a client service_then_c4a active agents:
+    - c4a client service
+    - c4a active agents
+  marlon simpson_then_c4a sdrs _then_c4a prospective agents:
+    - marlon simpson
+    - c4a sdrs
+    - c4a prospective agents
